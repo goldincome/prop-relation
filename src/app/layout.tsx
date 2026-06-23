@@ -113,11 +113,27 @@ export default function RootLayout({
         )}
 
         <footer className="border-t border-ink/10 dark:border-ink/20 mt-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-sm text-ink/40 dark:text-ink/30">
-            <p>
-              Proportional Relationship — helping students and teachers master
-              proportional reasoning.
-            </p>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-4">
+              <p className="text-sm text-ink/40 dark:text-ink/30">
+                Proportional Relationship — helping students and teachers master
+                proportional reasoning.
+              </p>
+              <nav className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm" aria-label="Legal">
+                <a href="/terms" className="text-ink/40 dark:text-ink/30 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
+                  Terms of Use
+                </a>
+                <a href="/privacy" className="text-ink/40 dark:text-ink/30 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
+                  Privacy Policy
+                </a>
+                <a href="/accessibility" className="text-ink/40 dark:text-ink/30 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
+                  Accessibility
+                </a>
+                <a href="/contact" className="text-ink/40 dark:text-ink/30 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
+                  Contact
+                </a>
+              </nav>
+            </div>
           </div>
         </footer>
       </body>

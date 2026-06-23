@@ -31,7 +31,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: post.frontmatter.title,
     description: post.frontmatter.description,
-    keywords: post.frontmatter.keywords,
     alternates: {
       canonical: post.frontmatter.canonical,
     },

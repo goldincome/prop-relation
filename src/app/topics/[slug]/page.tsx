@@ -18,7 +18,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: pillar.metaTitle,
     description: pillar.metaDescription,
-    keywords: pillar.keywords,
     alternates: {
       canonical: `https://proportionalrelationship.com/topics/${pillar.slug}`,
     },
@@ -27,11 +26,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: pillar.metaDescription,
       url: `https://proportionalrelationship.com/topics/${pillar.slug}`,
       type: "article",
+      images: [{ url: `/images/og-default.webp`, width: 1200, height: 630 }],
     },
     twitter: {
       card: "summary_large_image",
       title: pillar.metaTitle,
       description: pillar.metaDescription,
+      images: [`/images/og-default.webp`],
     },
   }
 }

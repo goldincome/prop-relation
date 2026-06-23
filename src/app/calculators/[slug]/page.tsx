@@ -35,7 +35,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: tool.metaTitle,
     description: tool.metaDescription,
-    keywords: tool.keywords,
     alternates: {
       canonical: `https://proportionalrelationship.com/calculators/${tool.slug}`,
     },

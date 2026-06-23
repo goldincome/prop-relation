@@ -17,7 +17,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: worksheet.metaTitle,
     description: worksheet.metaDescription,
-    keywords: worksheet.keywords,
     alternates: {
       canonical: `https://proportionalrelationship.com/worksheets/${worksheet.slug}`,
     },

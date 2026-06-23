@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { notFound } from "next/navigation"
+import { notFound, redirect } from "next/navigation"
 import { getPostsByTag, getAllTags } from "@/lib/blog"
 import { BlogCard } from "@/components/blog/BlogCard"
 import { Breadcrumbs } from "@/components/blog/Breadcrumbs"
@@ -27,6 +27,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function TagPage({ params }: Props) {
   const { tag } = await params
+  const hyphenated = tag.replace(/\s+/g, "-")
+  if (hyphenated !== tag) {
+    redirect(`/blog/tag/${hyphenated}`)
+  }
   const posts = getPostsByTag(tag)
 
   if (posts.length === 0) notFound()

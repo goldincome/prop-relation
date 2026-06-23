@@ -1,10 +1,22 @@
 import { notFound } from "next/navigation"
 import type { Metadata } from "next"
+import type { ReactNode } from "react"
 import { getTool, getToolSlugs } from "@/data/tools"
 import { ToolPageLayout } from "@/components/tools/ToolPageLayout"
+import { CrossMultiplicationChecker } from "@/components/checkers/CrossMultiplicationChecker"
+import { GraphProportionalChecker } from "@/components/checkers/GraphProportionalChecker"
+import { TableProportionalChecker } from "@/components/checkers/TableProportionalChecker"
+import { EquationProportionalChecker } from "@/components/checkers/EquationProportionalChecker"
 
 interface Props {
   params: Promise<{ slug: string }>
+}
+
+const checkerComponents: Record<string, ReactNode> = {
+  "cross-multiplication-checker": <CrossMultiplicationChecker />,
+  "is-this-graph-proportional": <GraphProportionalChecker />,
+  "proportional-table-checker": <TableProportionalChecker />,
+  "proportional-equation-checker": <EquationProportionalChecker />,
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -15,7 +27,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: tool.metaTitle,
     description: tool.metaDescription,
-    keywords: tool.keywords,
     alternates: {
       canonical: `https://proportionalrelationship.com/checkers/${tool.slug}`,
     },
@@ -46,5 +57,9 @@ export default async function CheckerPage({ params }: Props) {
 
   if (!tool || tool.type !== "checker") notFound()
 
-  return <ToolPageLayout tool={tool} />
+  return (
+    <ToolPageLayout tool={tool}>
+      {checkerComponents[slug] ?? null}
+    </ToolPageLayout>
+  )
 }

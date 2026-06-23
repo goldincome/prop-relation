@@ -20,6 +20,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/tutoring`, changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE}/about`, changeFrequency: "monthly", priority: 0.5 },
     { url: `${BASE}/contact`, changeFrequency: "monthly", priority: 0.4 },
+    { url: `${BASE}/terms`, changeFrequency: "monthly", priority: 0.3 },
+    { url: `${BASE}/privacy`, changeFrequency: "monthly", priority: 0.3 },
+    { url: `${BASE}/accessibility`, changeFrequency: "monthly", priority: 0.3 },
   ]
 
   const calculatorPages: MetadataRoute.Sitemap = getToolSlugs()
