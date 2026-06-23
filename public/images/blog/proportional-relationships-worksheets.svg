@@ -1,0 +1,35 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="800" height="400" fill="#f0fdf4"/>
+    <rect x="20" y="20" width="760" height="360" fill="white" stroke="#bbf7d0" stroke-width="1" rx="8"/>
+    <text x="400" y="50" text-anchor="middle" font-size="16" font-weight="bold" fill="#166534">Worksheets Overview</text>
+    <g transform="translate(100, 100)">
+        <rect x="0" y="0" width="180" height="120" fill="#fff" stroke="#bbf7d0" stroke-width="2" rx="4"/>
+        <text x="90" y="50" text-anchor="middle" font-size="14" font-weight="bold" fill="#166534">Proportional Pack</text>
+        <text x="90" y="80" text-anchor="middle" font-size="11" fill="#15803d">7 worksheets</text>
+    </g>
+    <g transform="translate(290, 100)">
+        <rect x="0" y="0" width="180" height="120" fill="#fff" stroke="#bbf7d0" stroke-width="2" rx="4"/>
+        <text x="90" y="50" text-anchor="middle" font-size="14" font-weight="bold" fill="#166534">Unit Rate Pack</text>
+        <text x="90" y="80" text-anchor="middle" font-size="11" fill="#15803d">6 worksheets</text>
+    </g>
+    <g transform="translate(480, 100)">
+        <rect x="0" y="0" width="180" height="120" fill="#fff" stroke="#bbf7d0" stroke-width="2" rx="4"/>
+        <text x="90" y="50" text-anchor="middle" font-size="14" font-weight="bold" fill="#166534">Constant of k</text>
+        <text x="90" y="80" text-anchor="middle" font-size="11" fill="#15803d">6 worksheets</text>
+    </g>
+    <g transform="translate(100, 230)">
+        <rect x="0" y="0" width="180" height="90" fill="#fff" stroke="#bbf7d0" stroke-width="2" rx="4"/>
+        <text x="90" y="40" text-anchor="middle" font-size="12" font-weight="bold" fill="#166534">Worksheets Total</text>
+        <text x="90" y="70" text-anchor="middle" font-size="18" fill="#15803d">19 pages</text>
+    </g>
+    <g transform="translate(300, 230)">
+        <rect x="0" y="0" width="180" height="90" fill="#fff" stroke="#bbf7d0" stroke-width="2" rx="4"/>
+        <text x="90" y="40" text-anchor="middle" font-size="12" font-weight="bold" fill="#166534">Answer Keys</text>
+        <text x="90" y="70" text-anchor="middle" font-size="18" fill="#15803d">All included</text>
+    </g>
+    <g transform="translate(500, 230)">
+        <rect x="0" y="0" width="180" height="90" fill="#fff" stroke="#bbf7d0" stroke-width="2" rx="4"/>
+        <text x="90" y="40" text-anchor="middle" font-size="12" font-weight="bold" fill="#166534">Printable</text>
+        <text x="90" y="70" text-anchor="middle" font-size="18" fill="#15803d">Yes</text>
+    </g>
+</svg>

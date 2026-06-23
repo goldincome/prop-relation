@@ -1,0 +1,13 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0d1b2a"/>
+  <rect x="0" y="0" width="1200" height="630" fill="url(#grid)" opacity="0.05"/>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="none" stroke="#ffffff" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <text x="600" y="260" text-anchor="middle" font-family="system-ui, sans-serif" font-size="64" font-weight="800" fill="#ffffff">Proportional Relationship</text>
+  <text x="600" y="330" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" fill="#14b8a6">Calculators · Checkers · Guides · Worksheets</text>
+  <text x="600" y="400" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" fill="#64748b">proportionalrelationship.com</text>
+  <rect x="440" y="440" width="320" height="4" rx="2" fill="#14b8a6"/>
+</svg>
